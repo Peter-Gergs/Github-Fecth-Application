@@ -45,6 +45,16 @@ body {
   display: flex;
   flex-direction: column-reverse;
 }
+@media (min-width: 992px) {
+  .repos-container .data-show {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  .repos-container .data-show .repo-box {
+    margin: 0;
+  }
+}
 @media (min-width: 768px) {
   .repos-container .data-show .repo-box {
     display: block;
